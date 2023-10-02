@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau SC', sans-serif; 
+}
+
+html { 
+    font-size: 62.5%;
+}
+
+/*HOME*/
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*
+.home__cover {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    position: relative;
+    opacity: 0.5;
+    z-index: 1;
+}*/
+
+.home__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0rem;
+}
+
+.texto {
+    text-align: center;
+    color: darkcyan;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: -1rem;
+}
+
+.titulo {
+    text-align: center;
+    color: beige;
+    font-size: 6rem;
+    font-weight: bolder;
+    margin: -1rem;
+}
+
+.subtitulo {
+    text-align: center;
+    color: beige;
+    font-size: 3.5rem;
+    font-family: 'Lora', serif;
+}
+
+.home__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__links__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.boton__izq {
+    padding: 1rem 1.5rem;
+    color: darkcyan;
+    background-color: transparent;
+    border: 1px solid darkcyan;
+    font-size: 1.75rem;
+    font-weight: bold;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.boton__cen {
+    padding: 1rem 1.5rem;
+    color: darkcyan;
+    background-color: transparent;
+    border: 1px solid darkcyan;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.boton__der {
+    padding: 1rem 1.5rem;
+    color: darkcyan;
+    background-color: transparent;
+    border: 1px solid darkcyan;
+    font-size: 1.75rem;
+    font-weight: bold;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.home__links__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
