@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Paola Velastiqui</title>
     <link rel="stylesheet" href="css/main.css">
+
+    <!--JavaScript-->
+    <link rel="stylesheet" href="js/main.js">
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,102 +18,88 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <!--Atropos JS-->
-    <link rel="stylesheet" href="path/to/atropos.css" />
-  </head>
-
+</head>
 <body>
-    <!--
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Pao Velastiqui</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    -->
+  <!--Inicio Home-->
+  <section class="home">
+    <div class="home__caja">
 
-    <!--Inicio Home-->
-    <section class="home">
-
-      <div class = "atropos mi-atropos"> 
-        <div class = "escala atropos"> 
-          <div class = "atropos-rotar"> 
-            <div clase = "atropos-inner "> 
-            <!-- pon tu contenido personalizado aquí -->
-              <div class="home__title">
-                <p class="texto">Hola mundo!</p>
-                <p class="titulo">Soy Paola Velastiqui</p>
-                <p class="subtitulo">|| Full Stack Web Developer ||</p>    
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="card-big anim">
+        <p class="titulo">Paola Velastiqui</p>
+        <p class="subtitulo">|| Full Stack Web Developer ||</p>
       </div>
-        
-            
-        <div class="home__links">
-            <div class="home__links__cards">
-                <button type="button" class="boton__izq">Sobre mí</button>
-                <button type="button" class="boton__cen">Skills</button>
-                <button type="button" class="boton__cen">CV</button>
-                <button type="button" class="boton__cen">Portfolio</button>
-                <button type="button" class="boton__der">Contacto</button>
-            </div>     
 
-            <div class="home__links__icons">
-              <a href="https://www.linkedin.com/in/lvelastiqui/" rel="noopener noreferrer"><img src="images/icons8-linkedin.svg" alt="logo LinkedIn"></a>  
-          
-              <a href="https://github.com/paovelastiqui" rel="noopener noreferrer"><img src="images/icons8-github.svg" alt="logo GitHub"></a>                
-            </div>       
+      <div class="card-small anim">
+        <button id="btn-abrir-modal" class="button-no-style">
+          <img src="./icons/icons8-test-account-64.png" alt="sobre mi">
+          <br>
+          <a class="subtitulo-2">Sobre Mi</a>
+        </button>
+        
+      </div>
+
+      <div class="card-small anim">
+        <a href="./download/CV Paola Velastiqui.pdf" target="_blank" rel="noopener noreferrer" class="subtitulo-2"><img href="" src="./icons/icons8-pdf-64.png" alt="pdf">Descargar CV</a>
+      </div>
+
+      <div class="card-small anim">
+        <div class="card-small-center">
+          <a href="https://www.linkedin.com/in/lvelastiqui/" rel="noopener noreferrer"><img src="./icons/icons8-linkedin-64.png" alt="linkedin"></a>
+          <a href="https://github.com/paovelastiqui" rel="noopener noreferrer"><img src="./icons/icons8-github-64.png" alt="github"></a>   
         </div>
-         
-        
-    </section>
-    <!--Fin Home-->
+        <p class="subtitulo-2">Contacto</p>
+      </div>
 
+      <div class="card-small anim">
+        <a href="./windows/portfolio.html" target="_blank" rel="noopener noreferrer" class="subtitulo-2"><img src="./icons/icons8-source-code-64.png" alt=""> Portfolio </a>
+      </div>
+
+      <div class="card-big-icon anim">
+        <img class="icon" src="./icons/icons8-html-5.svg" alt="html5">
+        <img class="icon" src="./icons/icons8-css3.svg" alt="css3">
+        <img class="icon" src="./icons/icons8-javascript.svg" alt="javascript">
+        <img class="icon" src="./icons/icons8-bootstrap.svg" alt="bootstrap">
+        <img class="icon" src="./icons/icons8-sass.svg" alt="sass">
+        <img class="icon" src="./icons/icons8-git.svg" alt="git">
+        <img class="icon" src="./icons/icons8-github.svg" alt="github">
+        <img class="icon" src="./icons/icons8-nodejs.svg" alt="node js">
+      </div>
+    </div>
     
-        <!--Inicio About
-        <section class="about">
-            <p>Soy desarrolladora Full Stack con conocimientos en HTML5, CSS3, JavaScript, SASS y Node JS, entre otros. Tengo capacidad de adaptación y poseo experiencia en trabajo de equipo. busco seguir capacitandome en el área IT, y seguir adquiriendo conocimientos y experiencias.</p>
-        </section>
-        Fin About-->
+  </section>
+  <!--Fin Home-->
 
-    <!--Inicio Skills
-        <section>
-            <p>HTML5 CSS3 JavaScript Bootstrap GIT GitHub SASS NodeJS Express JS Sequelize MySQL EJS</p>
-        </section>
-        Fin Skills-->
 
-        <!--Inicio Portfolio
-        <section></section>
-        Fin Portfolio-->
+  <dialog id="modal">
+    <div class="about">
+      <button class="X" id="btn-cerrar-modal">X</button>
+      <h2>SOBRE MÍ</h2>
+      <hr>
+      <p>Soy desarrolladora Full Stack con conocimientos en HTML5, CSS3, JavaScript, SASS y Node JS, entre otros.</p>
+      <p>Tengo capacidad de adaptación y poseo experiencia en trabajo de equipo. busco seguir capacitandome en el área IT, y seguir adquiriendo conocimientos y experiencias.</p>
+    </div>
+  </dialog>
 
-        <!--Inicio Contact
-        <section></section>
-        Fin Contact-->
+  <dialog id="modal">
+    <div class="portfolio">
+      <h2>PORTFOLIO</h2>
+      <div>
 
-    <!--script Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>  
+  </dialog>
+  
+
+
+  <!--script Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/about.js"></script>
 
 </body>
 </html>
