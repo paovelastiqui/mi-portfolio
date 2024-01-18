@@ -1,0 +1,18 @@
+//IMPORTS UTILITIES
+
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+//IMPORTS MISC
+
+@import "./misc/generales";
+@import "./misc/menu";
+@import "./misc/footer";
+
+//IMPORTS VIEWS
+
+@import "./views/home";
+@import "./views/about";
+@import "./views/skills";
+@import "./views/projects";
+@import "./views/contact";

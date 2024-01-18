@@ -1,0 +1,23 @@
+//MIXINS
+
+@mixin grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin max-width {
+    max-width: 1440px;
+    margin: 0 auto;
+}

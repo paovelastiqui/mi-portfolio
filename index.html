@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Paola Velastiqui</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!--JavaScript-->
     <link rel="stylesheet" href="js/main.js">
@@ -18,88 +18,318 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!--Icono-->
+    <link rel="shortcut icon" href="img/logo.png"> 
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
 </head>
+
 <body>
-  <!--Inicio Home-->
-  <section class="home">
-    <div class="home__caja">
-
-      <div class="card-big anim">
-        <p class="titulo">Paola Velastiqui</p>
-        <p class="subtitulo">|| Full Stack Web Developer ||</p>
-      </div>
-
-      <div class="card-small anim">
-        <button id="btn-abrir-modal" class="button-no-style">
-          <img src="./icons/icons8-test-account-64.png" alt="sobre mi">
-          <br>
-          <a class="subtitulo-2">Sobre Mi</a>
-        </button>
-        
-      </div>
-
-      <div class="card-small anim">
-        <a href="./download/CV Paola Velastiqui.pdf" target="_blank" rel="noopener noreferrer" class="subtitulo-2"><img href="" src="./icons/icons8-pdf-64.png" alt="pdf">Descargar CV</a>
-      </div>
-
-      <div class="card-small anim">
-        <div class="card-small-center">
-          <a href="https://www.linkedin.com/in/lvelastiqui/" rel="noopener noreferrer"><img src="./icons/icons8-linkedin-64.png" alt="linkedin"></a>
-          <a href="https://github.com/paovelastiqui" rel="noopener noreferrer"><img src="./icons/icons8-github-64.png" alt="github"></a>   
-        </div>
-        <p class="subtitulo-2">Contacto</p>
-      </div>
-
-      <div class="card-small anim">
-        <a href="./windows/portfolio.html" target="_blank" rel="noopener noreferrer" class="subtitulo-2"><img src="./icons/icons8-source-code-64.png" alt=""> Portfolio </a>
-      </div>
-
-      <div class="card-big-icon anim">
-        <img class="icon" src="./icons/icons8-html-5.svg" alt="html5">
-        <img class="icon" src="./icons/icons8-css3.svg" alt="css3">
-        <img class="icon" src="./icons/icons8-javascript.svg" alt="javascript">
-        <img class="icon" src="./icons/icons8-bootstrap.svg" alt="bootstrap">
-        <img class="icon" src="./icons/icons8-sass.svg" alt="sass">
-        <img class="icon" src="./icons/icons8-git.svg" alt="git">
-        <img class="icon" src="./icons/icons8-github.svg" alt="github">
-        <img class="icon" src="./icons/icons8-nodejs.svg" alt="node js">
-      </div>
-    </div>
-    
-  </section>
-  <!--Fin Home-->
-
-
-  <dialog id="modal">
-    <div class="about">
-      <button class="X" id="btn-cerrar-modal">X</button>
-      <h2>SOBRE MÍ</h2>
-      <hr>
-      <p>Soy desarrolladora Full Stack con conocimientos en HTML5, CSS3, JavaScript, SASS y Node JS, entre otros.</p>
-      <p>Tengo capacidad de adaptación y poseo experiencia en trabajo de equipo. busco seguir capacitandome en el área IT, y seguir adquiriendo conocimientos y experiencias.</p>
-    </div>
-  </dialog>
-
-  <dialog id="modal">
-    <div class="portfolio">
-      <h2>PORTFOLIO</h2>
-      <div>
-
-      </div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>  
-  </dialog>
   
+  <nav class="menu">
+    <div class="menu__container">
+      <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+      <label class="menu-open-button" for="menu-open">
+        <span class="hamburger hamburger-1"></span>
+        <span class="hamburger hamburger-2"></span>
+        <span class="hamburger hamburger-3"></span>
+      </label>
+      
+      <a href="#home" class="menu-item"><i class="ti ti-home"></i></a>
+      <a href="#about" class="menu-item"><i class="ti ti-user"></i></a>
+      <a href="#projects" class="menu-item"><i class="ti ti-folder-code"></i></a>
+      <a href="#contact" class="menu-item"><i class="ti ti-mail"></i></a>
+    </div>
+  </nav>
+    
+  <section class="home" id="home">
+    <div class="home__container">
+      <div class="home__container__1col">
+        <p><span class="span-4">CONST </span><span class="span-6">DEV </span><span class="span-3">= </span><span class="span-2">{</span></p>
+      </div>
+      <div class="home__container__2col">
+        <div></div>
+        <div>
+          <p><span class="span-5">nombre: </span><span class="span-1">"Paola Velastiqui",</span></p>
+        </div>
+      </div>
+      <div class="home__container__2col">
+        <div></div>
+        <div>
+          <p><span class="span-5">tarea: </span><span class="span-1">"Front End Developer"</span></p>
+        </div>
+      </div>
+      <div class="home__container__1col">
+        <p><span class="span-2">}</span><span class="span-3">;</span></p>
+      </div>
+    </div>
+    <div class="home__button">
+      <button class="corner-button"><a href="https://www.linkedin.com/in/paovelastiqui/"><span><i class="ti ti-brand-linkedin"></i>LinkedIn</span></a></button>
+      <button class="corner-button"><a href="https://github.com/paovelastiqui"><span><i class="ti ti-brand-github"></i>GitHub</span></a></button>
+      <button class="corner-button"><a href="#contact"><span><i class="ti ti-mail"></i>Email</span></a></button>
+    </div>
+  </section>
 
+  <section class="about" id="about">
+    <div class="about__body">
+      <div class="about__body__text">
+        <h1>SOBRE MI</h1>
+        <h2>¡Hola! Soy Paola Velastiqui 👋</h2>
+        <p>Soy una Desarrolladora Web que cuenta con conocimientos en HTML, CSS, JavaScript, Bootstrap, SASS, GIT, GitHub, Express y Node JS.</p>
+        <p>Durante 10 años me desarrolle en el área de Ingeniería Civil y actualmente busco seguir introduciendome en el mundo It y poder continuar capacitandome y perfeccionandome como desarrolladora front-end.</p>
+        <p>Soy muy buena trabajando en equipo dado que durante años trabajé en una área donde el trabajo en equipo era fundamental. Además, cuento con buena comunicación y rápida adaptación al entorno.</p>
+        <button><a class="about-cv" href="downloads/CV Velastiqui Paola.pdf">Descargar CV</a></button>
+      </div>
+      
+      <div class="about__body__certifications">
+        <div class="table">
+          <h1>CERTIFICACIONES</h1>
+          <div class="table__row">
+            <div class="table__row__data">
+              <div class="data"><p>2024</p></div>
+              <div class="image"><img src="img/institutos/coderhouse.png" alt="coderhouse"></div>
+            </div>
+            <div class="table__row__description">
+              <div class="certificado"><p>REACT JS</p></div>
+              <div class="instituto"><p>CODERHOUSE</p></div>          
+            </div>
+          </div> 
+          <div class="table__row">
+            <div class="table__row__data">
+              <div class="data"><p>2023</p></div>
+              <div class="image"><img src="img/institutos/codo.png" alt="codo a codo"></div>
+            </div>
+            <div class="table__row__description">
+              <div class="certificado"><p>FULL STACK - Node JS</p></div>
+              <div class="instituto"><p>CODO A CODO 4.0</p></div>
+            </div>
+          </div>                 
+          <div class="table__row">
+            <div class="table__row__data">
+              <div class="data"><p>2023</p></div>
+              <div class="image"><img src="img/institutos/coderhouse.png" alt="coderhouse"></div>
+            </div>
+            <div class="table__row__description">
+              <div class="certificado"><p>DESARROLLO WEB <a href="downloads/Desarrollo.png"><img src="img/icons/check.png" alt="check"></a></p></div>
+              <div class="instituto"><p>CODERHOUSE</p></div>
+            </div>
+          </div> 
+          <div class="table__row">
+            <div class="table__row__data">
+              <div class="data"><p>2023</p></div>
+              <div class="image"><img src="img/institutos/todocode.png" alt="todocode"></div>
+            </div>
+            <div class="table__row__description">
+              <div class="certificado"><p>GIT Y GITHUB <a href="downloads/git-github.png"><img src="img/icons/check.png" alt="check"></a></p></div>
+              <div class="instituto"><p>TODOCODE</p></div>
+            </div>
+          </div>         
+          <div class="table__row">
+            <div class="table__row__data">
+              <div class="data"><p>2023</p></div>
+              <div class="image"><img src="img/institutos/todocode.png" alt="todocode"></div>
+            </div>
+            <div class="table__row__description">
+              <div class="certificado"><p>INTROD. A LA PROGRAMACIÓN <a href="downloads/programacion.png"><img src="img/icons/check.png" alt="check"></a></p></div>
+              <div class="instituto"><p>TODOCODE</p></div>
+            </div>
+          </div> 
+          <div class="table__row">
+            <div class="table__row__data">
+              <div class="data"><p>2023</p></div>
+              <div class="image"><img src="img/institutos/ba.PNG" alt="ba multiplica"></div>
+            </div>
+            <div class="table__row__description">
+              <div class="certificado"><p>DISEÑO DIGITAL <a href="downloads/Diseño.pdf"><img src="img/icons/check.png" alt="check"></a></p></div>
+              <div class="instituto"><p>BA MULTIPLICA 2.0</p></div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills">
+    <div class="skills__title">
+      <h1>SKILLS</h1>
+    </div>
+    <div class="skills__logos">
+      <div class="skills__logos__slider">
+        <div class="skill"> 
+          <img src="img/skills/html5.svg" alt="html">
+          <p>HTML</p>
+        </div>
+        <div class="skill">
+          <img src="img/skills/css.svg" alt="css">
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <img src="img/skills/javascript.svg" alt="javascript">
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <img src="img/skills/typescript.svg" alt="typescript">
+          <p>TypeScript</p>
+        </div>
+        <div class="skill">
+          <img src="img/skills/bootstrap.svg" alt="bootstrap">
+          <p>Bootstrap</p>
+        </div>
+        <div class="skill">
+          <img src="img/skills/sass.svg" alt="sass">
+          <p>SASS</p>
+        </div>
+        <div class="skill">
+          <img src="img/skills/tailwindcss.svg" alt="tailwind">
+          <p>Tailwind</p>
+        </div>
+        <div class="skill">
+          <img class="w-50" src="img/skills/figma.svg" alt="figma">
+          <p>Figma</p>
+        </div>
+        <div class="skill">
+          <img src="img/skills/git.svg" alt="git">
+          <p>Git</p>
+        </div>
+        <div class="skill">
+          <img src="img/skills/github.svg" alt="github">
+          <p>GitHub</p>
+        </div>
+        <div class="skill">
+          <img src="img/skills/react.svg" alt="react">
+          <p>React</p>
+        </div>
+        <div class="skill">
+          <img src="img/skills/ejs.svg" alt="ejs">
+          <p>EJS</p>
+        </div>
+        <div class="skill">
+          <img src="img/skills/mysql.svg" alt="mysql">
+          <p>MySQL</p>
+        </div>
+        <div class="skill">
+          <img src="img/skills/nodejs.svg" alt="node js">
+          <p>Node JS</p>
+        </div>  
+      </div>
+    </div>
+  </section>
+  
+  <section class="projects" id="projects">
+    <div class="projects__title">
+      <h1>PROYECTOS</h1>    
+    </div>
+    <div class="projects__container">
+      <div class="item">
+        <img src="img/projects/analia-pereyra.PNG" alt="analia-pereyra">
+        <h3>ANALIA PEREYRA</h3>
+        <div class="item__btn">
+          <button class="btn-red">HTML</button>
+          <button class="btn-blue">CSS</button>
+          <button class="btn-pink">SASS</button>
+        </div>
+        <p>Landing page para una profesional de la rama de la psicopedagogía, donde puede mostrar la rama en la cual se desarrolla y los tratamientos que ofrece. Además cuenta con una sección con material descargable de libre acceso.</p>
+        <div class="item__code">
+          <button><a href="https://github.com/paovelastiqui/analia-pereyra" target="_blank" rel="noopener noreferrer">Código</a></button>
+          <button><a href="https://paovelastiqui.github.io/analia-pereyra/" target="_blank" rel="noopener noreferrer">Deploy</a></button>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/projects/funkoshop.PNG" alt="funkoshop">
+        <h3>FunkoShop</h3>
+        <div class="item__btn">
+          <button class="btn-red">HTML</button>
+          <button class="btn-blue">CSS</button>
+          <button class="btn-yellow">JavaScript</button>
+        </div>
+        <p>E-commerce de muñecos Funko con diferentes secciones como carrito de compras, login, contacto, entre otras. </p>
+        <div class="item__code">
+          <button><a href="https://github.com/paovelastiqui/funkoshop" target="_blank" rel="noopener noreferrer">Código</a></button>
+          <button><a href="https://paovelastiqui.github.io/funkoshop/" target="_blank" rel="noopener noreferrer">Deploy</a></button>
+        </div>
+      </div> 
+      <div class="item">
+        <img src="img/projects/world-travel.PNG" alt="world travel">
+        <h3>World Travel</h3>
+        <div class="item__btn">
+          <button class="btn-red">HTML</button>
+          <button class="btn-blue">CSS</button>
+          <button class="btn-green">Tailwind</button>
+        </div>
+        <p>Proyecto de una agencia de viajes diagramada por completo con Tailwind, con función clara y oscura.</p>
+        <div class="item__code">
+          <button><a href="https://github.com/paovelastiqui/world-travel" target="_blank" rel="noopener noreferrer">Código</a></button>
+          <button><a href="https://paovelastiqui.github.io/world-travel/public/" target="_blank" rel="noopener noreferrer">Deploy</a></button>
+        </div>
+      </div>
+      <!-- <div class="item">
+        <img src="img/projects/funkoshop.PNG" alt="eva make up">
+        <h3>Eva MakeUp</h3>
+        <div class="item__btn">
+          <button class="btn-red">HTML</button>
+          <button class="btn-blue">CSS</button>
+          <button class="btn-pink">SASS</button>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque corrupti eligendi similique. Magni voluptas eum voluptates eos corporis. Tempore minima eligendi quis perspiciatis! Sed inventore doloribus illum ipsa distinctio.</p>
+        <div class="item__code">
+          <button><a href="https://github.com/paovelastiqui/analia-pereyra" target="_blank" rel="noopener noreferrer">Código</a></button>
+          <button><a href="https://paovelastiqui.github.io/analia-pereyra/" target="_blank" rel="noopener noreferrer">Deploy</a></button>
+        </div>
+      </div>  
+      <div class="item">
+        <img src="img/projects/funkoshop.PNG" alt="eva make up">
+        <h3>E-commerce React</h3>
+        <div class="item__btn">
+          <button class="btn-red">HTML</button>
+          <button class="btn-blue">CSS</button>
+          <button class="btn-pink">SASS</button>
+          <button class="btn-yellow">JavaScript</button>
+          <button class="btn-green">React</button>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque corrupti eligendi similique. Magni voluptas eum voluptates eos corporis. Tempore minima eligendi quis perspiciatis! Sed inventore doloribus illum ipsa distinctio.</p>
+        <div class="item__code">
+          <button><a href="https://github.com/paovelastiqui/analia-pereyra" target="_blank" rel="noopener noreferrer">Código</a></button>
+          <button><a href="https://paovelastiqui.github.io/analia-pereyra/" target="_blank" rel="noopener noreferrer">Deploy</a></button>
+        </div>
+      </div>   -->
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact__title">
+      <h1>CONTACTO</h1>
+    </div>
+
+    <div class="contact__form">
+      <form action="/procesar_formulario" method="post">
+    
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p>&copy; 2024 <b>Paola Velastiqui</b></p>
+    </div>
+  </footer>
 
   <!--script Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <script src="./js/main.js"></script>
-  <script src="./js/about.js"></script>
 
 </body>
 </html>

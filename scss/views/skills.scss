@@ -1,0 +1,69 @@
+//SKILLS
+
+.skills {
+    @include flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $color-black;
+    &__title {
+        @include flex;
+        margin: 2rem 0;
+        h1 {
+            color: $color-white;
+        }
+    }
+    &__logos {
+        @include sizes(60vw, auto);
+        @include max-width;
+        margin-bottom: 4rem;
+        overflow: hidden;
+        background-color: $color-white;
+        border-radius: 1rem;
+        &__slider {
+            display: flex;
+            @include sizes(auto, auto);
+            padding: 2rem;
+            animation: scroll 40s linear infinite;
+            -webkit-animation: scroll 40s linear infinite;
+            width: calc(65px * 28);
+            .skill {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                @include sizes(65px, auto);
+                flex-direction: column;
+                margin: 0 2rem;
+                img {
+                    width: 100%;
+                    margin: 0.5rem 0;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+//KEYFRAMES SKILLS
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-65px * 14));
+        transform: translateX(calc(-65px * 14));
+    }
+}
+
+//RESPONSIVES SKILLS
+
+@media screen and (max-width: 768px) {
+    .skill {
+        p {
+            font-size: 1.35rem;
+        };
+    }
+}

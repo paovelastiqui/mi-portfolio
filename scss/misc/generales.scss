@@ -1,0 +1,71 @@
+//ESTILOS GENERALES
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+
+html {
+    font-size: 62.5%;
+    font-family: $font-principal; }
+
+.window {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    // border: 3px solid var(--var-black);
+    // border-radius: 3rem;
+    // box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3.2rem; 
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 5px; }
+
+// h4 {
+//     font-size: map-get($sizes, small);
+//     margin: 10px 0; }
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.5rem;}
+
+.btn-red {
+    background-color: $color-red;
+}
+
+.btn-blue {
+    background-color: $color-blue;
+}
+
+.btn-green {
+    background-color: $color-green;
+}
+
+.btn-yellow {
+    background-color: $color-yellow;
+}
+
+.btn-pink {
+    background-color: $color-pink;
+}
