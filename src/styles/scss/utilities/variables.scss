@@ -1,0 +1,21 @@
+//COLORS
+
+$color-blue: #cae4cc;
+// $color-darkblue: #478c9d;
+$color-darkblue: #06acc2;
+$color-pink: #f4d7e8;
+$color-violet: #AC81D5;
+$color-white: #ffffff;
+$color-black: #2f2f2f;
+$color-green: #71be91;
+$color-yellow: #dab664;
+$color-red: #e8867e;
+$shadow: inset 0 4px 4px rgba(255, 255, 255, 0.5), 0 8px 8px rgba(0, 0, 0, 0.75);
+
+//FONTS
+
+$font-principal: 'Righteous', sans-serif;
+$font-body: 'Josefin Sans', sans-serif; 
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Righteous&display=swap')

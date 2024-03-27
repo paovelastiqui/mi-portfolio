@@ -1,0 +1,82 @@
+//ESTILOS GENERALES
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+
+html {
+    font-size: 62.5%;
+    font-family: $font-body; }
+
+.window {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    // border: 3px solid var(--var-black);
+    // border-radius: 3rem;
+    // box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem; 
+    margin-bottom: 0.5rem;
+    font-family: $font-principal;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: $font-principal;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 5px; 
+    font-family: $font-principal;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: $font-body;
+}
+
+.ti {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+}  
+
+.btn-red {
+    background-color: $color-red;
+}
+
+.btn-blue {
+    background-color: $color-blue;
+}
+
+.btn-green {
+    background-color: $color-green;
+}
+
+.btn-yellow {
+    background-color: $color-yellow;
+}
+
+.btn-pink {
+    background-color: $color-pink;
+}
+
+.btn-violet {
+    background-color: $color-violet;
+}

@@ -1,0 +1,167 @@
+//ABOUT
+
+.about {
+    @include flex;
+    @include sizes(100%, auto);
+    background-color: $color-black;
+    &__body {
+        @include flex;
+        @include sizes(100%, auto);
+        @include max-width;
+        flex-wrap: nowrap;
+        margin: 5rem 0;
+        justify-items: center;
+        gap: 4rem;
+        padding: 1rem 4rem;
+        &__text {
+            @include sizes(90%, auto);
+            min-width: 350px;
+            padding: 4rem;
+            margin: 1rem;
+            background-color: $color-blue;
+            border-radius: 2rem;
+            box-shadow: $shadow;
+            p {
+                font-size: 1.7rem;
+                margin-bottom: 0.75rem;
+            }
+            button {
+                padding: 0.5rem;
+                margin-top: 1rem;
+                font-family: $font-body;
+                background-color: $color-red;
+                width: 15rem;
+                height: 4.5rem;
+                border: none;
+                border-radius: 2rem;
+                a {
+                    font-size: 1.65rem;
+                    color: $color-white;
+                    text-decoration: none;
+                }
+            }
+        }
+        &__certifications {
+            @include flex;
+            .table {
+                background-color: $color-pink;
+                box-shadow: $shadow;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+                border-radius: 1rem;
+                gap: 0.5rem; 
+                &__row {
+                    display: flex;
+                    gap: 0.3rem; 
+                    &__data {
+                        width: 5rem;
+                        @include flex; 
+                        flex-direction: column;
+                        .data {
+                            background-color: $color-pink;
+                            padding: 0;
+                            p {
+                                font-family: $font-body;
+                                font-size: 1.2rem;
+                                font-weight: bold;
+                                margin-bottom: 0; 
+                                padding: 0   
+                            };  
+                        }
+                        .image {
+                            background-color: $color-pink;
+                            padding: 0; 
+                            height: 2.5rem;
+                            img {
+                                @include flex;
+                                width: 2.3rem;
+                                border-radius: 50%;
+                            }    
+                        }
+                    }
+                    &__description {
+                        width: 100%; 
+                        .certificado {
+                            background-color: $color-pink;
+                            padding: 0; 
+                            p {
+                                font-family: $font-body;
+                                font-size: 1.5rem;
+                                font-weight: bold; 
+                                margin-bottom: 0;
+                                padding: 0;  
+                            } 
+                        }
+                        .instituto {
+                            display: flex;
+                            align-items: center;
+                            background-color: $color-pink;
+                            padding: 0; 
+                            height: 2.5rem;
+                            p {
+                                font-family: $font-body;
+                                font-size: 1.3rem; 
+                                margin-top: 0rem;
+                                margin-bottom: 0;  
+                            }
+                        }
+                    }        
+                }
+            }
+        }
+    }
+}
+
+//RESPONSIVES ABOUT
+
+@media screen and (max-width: 860px) {
+    .about__body {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about__body {
+        flex-direction: column;
+        &__text {
+            p {
+                font-size: 1.35rem;
+            };
+            button {
+                width: 11rem;
+                height: 3.5rem;
+                a {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        &__certifications {
+            .table {
+                &__row {
+                    &__description {
+                        .certificado {
+                            p {
+                                font-size: 1.4rem;
+                            } 
+                        }
+                        .instituto {
+                            height: 2.5rem;
+                            p {
+                                font-size: 1.2rem;  
+                            }
+                        }
+                    }        
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about__body {
+        &__text {
+            @include sizes(80%, auto);
+        }
+    }
+}
