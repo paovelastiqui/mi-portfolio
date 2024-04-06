@@ -55,15 +55,6 @@
         justify-content: center;
         min-height: 10vh;
         margin: 4rem 2rem 3rem;
-        span {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-                width: 4rem;
-                margin-right: 0.5rem;
-            }
-        }
         .corner-button {
             font-family: $font-principal;
             letter-spacing: .02rem;
@@ -76,10 +67,20 @@
             position: relative;
             -webkit-transition: color 0.3s;
             transition: color 0.3s;
-            a {
-                text-decoration: none;
-                color: $color-green;                      
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 4rem;
+                    margin-right: 0.5rem;
+                    color: $color-green; 
+                }
             }
+            // a {
+            //     text-decoration: none;
+            //     color: $color-green;  
+            // }
         }
         .corner-button:hover {
             color: $color-red;

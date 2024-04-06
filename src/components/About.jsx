@@ -7,7 +7,7 @@ export const About = () => {
 				<div className="about__body__text">
 					<h1>SOBRE MI</h1>
 					<h2>¡Hola! Soy Paola Velastiqui 👋</h2>
-					<p>Soy una Desarrolladora Web que cuenta con conocimientos en HTML, CSS, JavaScript, Bootstrap, SASS, Tailwind, React JS, GIT, GitHub, Express y Node JS.</p>
+					<p>Soy estudiante de programación en C.F.P. Nº 36 y desarrolladora web que cuenta con conocimientos en HTML, CSS, JavaScript, Bootstrap, SASS, Tailwind, React JS, GIT, GitHub, Express y Node JS.</p>
 					<p>Durante 10 años me desarrolle en el área de Ingeniería Civil y actualmente busco seguir introduciendome en el mundo It y poder continuar capacitandome y perfeccionandome como desarrolladora front-end.</p>
 					<p>Soy muy buena trabajando en equipo dado que durante años trabajé en una área donde el trabajo en equipo era fundamental. Además, cuento con buena comunicación y rápida adaptación al entorno.</p>
 					<button><a className="about-cv" href="downloads/CV Velastiqui Paola.pdf">Descargar CV</a></button>

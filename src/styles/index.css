@@ -123,7 +123,7 @@ p {
       .menu__container .menu-item .hamburger-3, .menu__container .menu-open-button .hamburger-3 {
         transform: translate3d(0, 8px, 0); }
     .menu__container .menu-item:hover {
-      background: #ffffff;
+      background: #e8867e;
       color: #06acc2; }
     .menu__container .menu-item:nth-child(3) {
       transition-duration: 180ms; }
@@ -269,13 +269,6 @@ p {
     justify-content: center;
     min-height: 10vh;
     margin: 4rem 2rem 3rem; }
-    .home__button span {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .home__button span img {
-        width: 4rem;
-        margin-right: 0.5rem; }
     .home__button .corner-button {
       font-family: "Righteous", sans-serif;
       letter-spacing: .02rem;
@@ -288,9 +281,14 @@ p {
       position: relative;
       -webkit-transition: color 0.3s;
       transition: color 0.3s; }
-      .home__button .corner-button a {
-        text-decoration: none;
-        color: #71be91; }
+      .home__button .corner-button span {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .home__button .corner-button span img {
+          width: 4rem;
+          margin-right: 0.5rem;
+          color: #71be91; }
     .home__button .corner-button:hover {
       color: #e8867e; }
       .home__button .corner-button:hover a {
