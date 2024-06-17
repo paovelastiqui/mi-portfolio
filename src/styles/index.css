@@ -9,12 +9,6 @@ html {
   font-size: 62.5%;
   font-family: "Josefin Sans", sans-serif; }
 
-.window {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  height: auto; }
-
 body {
   display: flex;
   flex-direction: column;
@@ -70,8 +64,6 @@ p {
   margin-left: 8rem;
   z-index: 1; }
   .menu__container {
-    max-width: 1440px;
-    margin: 0 auto;
     font-size: 1.5rem;
     text-align: left; }
     .menu__container .menu-open {
@@ -214,9 +206,7 @@ p {
   .footer__container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    max-width: 1440px;
-    margin: 0 auto; }
+    align-items: center; }
     .footer__container p {
       color: #ffffff;
       font-size: 1.5rem; }
@@ -276,7 +266,7 @@ p {
       background: transparent;
       border: 0.5rem solid currentColor;
       padding: 1rem 2rem;
-      font-size: 2.2rem;
+      font-size: 2.25rem;
       color: #71be91;
       position: relative;
       -webkit-transition: color 0.3s;
@@ -284,11 +274,8 @@ p {
       .home__button .corner-button span {
         display: flex;
         justify-content: center;
-        align-items: center; }
-        .home__button .corner-button span img {
-          width: 4rem;
-          margin-right: 0.5rem;
-          color: #71be91; }
+        align-items: center;
+        gap: 1rem; }
     .home__button .corner-button:hover {
       color: #e8867e; }
       .home__button .corner-button:hover a {
@@ -358,17 +345,16 @@ p {
     align-items: center;
     width: 100%;
     height: auto;
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 1280px;
     flex-wrap: nowrap;
     margin: 5rem 0;
     justify-items: center;
     gap: 4rem;
-    padding: 1rem 4rem; }
+    padding: 1rem 10rem; }
     .about__body__text {
       width: 90%;
       height: auto;
-      min-width: 350px;
+      min-width: 300px;
       padding: 4rem;
       margin: 1rem;
       background-color: #cae4cc;
@@ -404,7 +390,9 @@ p {
         gap: 0.5rem; }
         .about__body__certifications .table__row {
           display: flex;
-          gap: 0.3rem; }
+          gap: 0.3rem;
+          margin-bottom: 0.5rem;
+          color: #2f2f2f; }
           .about__body__certifications .table__row__data {
             width: 5rem;
             display: flex;
@@ -440,7 +428,9 @@ p {
                 font-size: 1.5rem;
                 font-weight: bold;
                 margin-bottom: 0;
-                padding: 0; }
+                padding: 0;
+                gap: 0.5rem;
+                display: flex; }
             .about__body__certifications .table__row__description .instituto {
               display: flex;
               align-items: center;
@@ -453,26 +443,28 @@ p {
                 margin-top: 0rem;
                 margin-bottom: 0; }
 
+@media screen and (max-width: 950px) {
+  .about__body {
+    flex-direction: column; } }
+
 @media screen and (max-width: 860px) {
   .about__body {
     gap: 2rem; } }
 
 @media screen and (max-width: 768px) {
-  .about__body {
-    flex-direction: column; }
-    .about__body__text p {
-      font-size: 1.35rem; }
-    .about__body__text button {
-      width: 11rem;
-      height: 3.5rem; }
-      .about__body__text button a {
-        font-size: 1.3rem; }
-    .about__body__certifications .table__row__description .certificado p {
-      font-size: 1.4rem; }
-    .about__body__certifications .table__row__description .instituto {
-      height: 2.5rem; }
-      .about__body__certifications .table__row__description .instituto p {
-        font-size: 1.2rem; } }
+  .about__body__text p {
+    font-size: 1.35rem; }
+  .about__body__text button {
+    width: 11rem;
+    height: 3.5rem; }
+    .about__body__text button a {
+      font-size: 1.3rem; }
+  .about__body__certifications .table__row__description .certificado p {
+    font-size: 1.4rem; }
+  .about__body__certifications .table__row__description .instituto {
+    height: 2.5rem; }
+    .about__body__certifications .table__row__description .instituto p {
+      font-size: 1.2rem; } }
 
 @media screen and (max-width: 576px) {
   .about__body__text {
@@ -496,8 +488,6 @@ p {
   .skills__logos {
     width: 60vw;
     height: auto;
-    max-width: 1440px;
-    margin: 0 auto;
     white-space: nowrap;
     margin-bottom: 4rem;
     overflow: hidden;
@@ -553,8 +543,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1440px;
-    margin: 0 auto;
     width: 90%;
     flex-wrap: wrap;
     margin: 3rem 0;
@@ -602,17 +590,18 @@ p {
         flex-wrap: nowrap;
         gap: 1rem;
         margin: 2rem 0 1rem; }
-        .projects__container .item__code button {
+        .projects__container .item__code a {
           background-color: #06acc2;
           font-family: "Josefin Sans", sans-serif;
           font-size: 1.4rem;
           font-weight: bold;
           border-radius: 1.75rem;
           padding: 0.75rem 2rem;
-          border: none; }
-          .projects__container .item__code button a {
-            color: black;
-            text-decoration: none; }
+          border: none;
+          color: black;
+          text-decoration: none;
+          display: flex;
+          gap: 0.5rem; }
         .projects__container .item__code button:hover {
           background-color: black; }
           .projects__container .item__code button:hover a {

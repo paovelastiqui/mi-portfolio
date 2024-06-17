@@ -14,7 +14,7 @@
     }
     &__logos {
         @include sizes(60vw, auto);
-        @include max-width;
+        // @include max;
         white-space: nowrap;
         margin-bottom: 4rem;
         overflow: hidden;

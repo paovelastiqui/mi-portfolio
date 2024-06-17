@@ -7,15 +7,15 @@
     &__body {
         @include flex;
         @include sizes(100%, auto);
-        @include max-width;
+        @include max;
         flex-wrap: nowrap;
         margin: 5rem 0;
         justify-items: center;
         gap: 4rem;
-        padding: 1rem 4rem;
+        padding: 1rem 10rem;
         &__text {
             @include sizes(90%, auto);
-            min-width: 350px;
+            min-width: 300px;
             padding: 4rem;
             margin: 1rem;
             background-color: $color-blue;
@@ -54,6 +54,8 @@
                 &__row {
                     display: flex;
                     gap: 0.3rem; 
+                    margin-bottom: 0.5rem;
+                    color: $color-black;
                     &__data {
                         width: 5rem;
                         @include flex; 
@@ -91,6 +93,8 @@
                                 font-weight: bold; 
                                 margin-bottom: 0;
                                 padding: 0;  
+                                gap: 0.5rem;
+                                display: flex;
                             } 
                         }
                         .instituto {
@@ -115,6 +119,12 @@
 
 //RESPONSIVES ABOUT
 
+@media screen and (max-width: 950px) {
+    .about__body {
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 860px) {
     .about__body {
         gap: 2rem;
@@ -123,7 +133,6 @@
 
 @media screen and (max-width: 768px) {
     .about__body {
-        flex-direction: column;
         &__text {
             p {
                 font-size: 1.35rem;

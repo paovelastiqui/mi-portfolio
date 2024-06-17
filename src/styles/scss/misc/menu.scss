@@ -6,7 +6,7 @@
     margin-left: 8rem;
     z-index: 1;
     &__container {
-        @include max-width;
+        // @include max-width;
         font-size: 1.5rem;
         text-align: left;
         .menu-open {

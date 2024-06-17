@@ -62,7 +62,7 @@
             background: transparent;
             border: 0.5rem solid currentColor;
             padding: 1rem 2rem;
-            font-size: 2.2rem;
+            font-size: 2.25rem;
             color: $color-green;
             position: relative;
             -webkit-transition: color 0.3s;
@@ -71,16 +71,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                img {
-                    width: 4rem;
-                    margin-right: 0.5rem;
-                    color: $color-green; 
-                }
+                gap: 1rem;
             }
-            // a {
-            //     text-decoration: none;
-            //     color: $color-green;  
-            // }
         }
         .corner-button:hover {
             color: $color-red;

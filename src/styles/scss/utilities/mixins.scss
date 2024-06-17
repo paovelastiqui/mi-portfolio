@@ -17,7 +17,11 @@
     height: $height;
 }
 
-@mixin max-width {
-    max-width: 1440px;
-    margin: 0 auto;
+// @mixin max-width {
+//     max-width: 1280px;
+//     margin: 0 auto;
+// }
+
+@mixin max {
+    max-width: 1280px;
 }

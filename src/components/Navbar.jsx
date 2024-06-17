@@ -15,7 +15,6 @@ export const Navbar = () => {
                 <a href="#home" className="menu-item"><img src={Home} alt="" /></a>
                 <a href="#about" className="menu-item"><img src={User} alt="" /></a>
                 <a href="#projects" className="menu-item"><img src={Folder} alt="" /></a>
-                {/* <a href="#contact" className="menu-item"><i className="ti ti-mail" /></a> */}
             </div>
         </nav>
 	)

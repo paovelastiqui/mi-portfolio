@@ -1,6 +1,6 @@
-import Github from '../assets/icons/github.svg';
-import Linkedin from '../assets/icons/linkedin.svg';
-import Email from '../assets/icons/email.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export const Hero = () => {
 	return (
@@ -26,19 +26,19 @@ export const Hero = () => {
 				</div>
 			</div>
 			<div className="home__button">
-				<a href="https://www.linkedin.com/in/paovelastiqui/">
+				<a href="https://www.linkedin.com/in/paovelastiqui/" target="_blank" rel="noopener noreferrer">
 					<button className="corner-button">
-						<span><img src={Linkedin} alt="" />LinkedIn</span>
+						<span><FontAwesomeIcon icon={faLinkedin} />LinkedIn</span>
 					</button>
 				</a>
-				<a href="https://github.com/paovelastiqui">
+				<a href="https://github.com/paovelastiqui" target="_blank" rel="noopener noreferrer">
 					<button className="corner-button">
-						<span><img src={Github} alt="" />GitHub</span>
+						<span><FontAwesomeIcon icon={faGithub} />GitHub</span> 
 					</button>
 				</a>
-				<a href="#home">
+				<a href="#home" target="_blank" rel="noopener noreferrer">
 					<button className="corner-button">
-						<span><img src={Email} alt="" />Email</span>
+						<span><FontAwesomeIcon icon={faEnvelope} />Email</span>
 					</button>
 				</a>
 			</div>
