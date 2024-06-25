@@ -1,21 +1,29 @@
 //COLORS
 
-$color-blue: #cae4cc;
-// $color-darkblue: #478c9d;
-$color-darkblue: #06acc2;
-$color-pink: #f4d7e8;
+$color-dark-principal: #e8867e;
+$color-dark-secondary: #71be91;
+$color-light-principal: #e8867e;
+$color-light-secondary: #3C415A;
+$color-bg-dark: #2f2f2f;
+$color-bg-light: #F9DEC9;
+$color-lightblue: #99B2DD;
+
+$color-darkblue: #3C415A;
+$color-brown: #685044;
 $color-violet: #AC81D5;
 $color-white: #ffffff;
 $color-black: #2f2f2f;
+$color-champ: #F9DEC9;
 $color-green: #71be91;
 $color-yellow: #dab664;
-$color-red: #e8867e;
-$shadow: inset 0 4px 4px rgba(255, 255, 255, 0.5), 0 8px 8px rgba(0, 0, 0, 0.75);
+$shadow: 0 8px 8px rgba(0, 0, 0, 0.75);
 
 //FONTS
 
-$font-principal: 'Righteous', sans-serif;
+$font-principal: 'Poppins', sans-serif;
 $font-body: 'Josefin Sans', sans-serif; 
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Righteous&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');

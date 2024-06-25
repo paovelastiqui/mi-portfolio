@@ -4,6 +4,7 @@ import { About } from './components/About';
 import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Footer } from './components/Footer';
+// import { Modal } from './components/Modal';
 import './styles/index.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Skills/>
       <Projects/>
       <Footer />
+      {/* <Modal/> */}
     </>
   )
 }

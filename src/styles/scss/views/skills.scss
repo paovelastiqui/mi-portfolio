@@ -4,7 +4,6 @@
     @include flex;
     flex-direction: column;
     width: 100%;
-    background-color: $color-black;
     &__title {
         @include flex;
         margin: 2rem 0;
@@ -14,7 +13,7 @@
     }
     &__logos {
         @include sizes(60vw, auto);
-        // @include max;
+        @include max-width;
         white-space: nowrap;
         margin-bottom: 4rem;
         overflow: hidden;

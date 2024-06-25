@@ -3,65 +3,70 @@
 .about {
     @include flex;
     @include sizes(100%, auto);
-    background-color: $color-black;
     &__body {
         @include flex;
         @include sizes(100%, auto);
-        @include max;
+        @include max-width;
         flex-wrap: nowrap;
-        margin: 5rem 0;
         justify-items: center;
         gap: 4rem;
-        padding: 1rem 10rem;
+        padding: 0rem 15rem;
         &__text {
             @include sizes(90%, auto);
             min-width: 300px;
-            padding: 4rem;
-            margin: 1rem;
-            background-color: $color-blue;
-            border-radius: 2rem;
-            box-shadow: $shadow;
-            p {
-                font-size: 1.7rem;
-                margin-bottom: 0.75rem;
+            h1 {
+                color: $color-white;
             }
-            button {
-                padding: 0.5rem;
+            h2 {
+                color: $color-white;
+            }
+            p {
+                color: $color-white;
+                font-weight: 300;
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+            .corner-button {
+                font-size: 1.75rem;
                 margin-top: 1rem;
-                font-family: $font-body;
-                background-color: $color-red;
-                width: 15rem;
-                height: 4.5rem;
-                border: none;
-                border-radius: 2rem;
-                a {
-                    font-size: 1.65rem;
-                    color: $color-white;
-                    text-decoration: none;
-                }
             }
         }
         &__certifications {
-            @include flex;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            // .corner-button {
+            //     position: relative;
+            //     z-index: 0;
+            //     width: 350px;
+            //     height: 370px;
+            // }
             .table {
-                background-color: $color-pink;
+                // position: absolute;
+                // z-index: 1;
+                width: 350px;
+                // height: 370px;
+                color: $color-white;
+                border: 0.5rem solid $color-dark-principal;
                 box-shadow: $shadow;
                 display: flex;
                 flex-direction: column;
-                padding: 2rem;
+                padding: 1.5rem 1.5rem 1rem;
                 border-radius: 1rem;
                 gap: 0.5rem; 
+                h2 {
+                    margin-bottom: 0;
+                }
                 &__row {
                     display: flex;
-                    gap: 0.3rem; 
+                    gap: 0.5rem; 
                     margin-bottom: 0.5rem;
-                    color: $color-black;
+                    color: $color-white;
                     &__data {
                         width: 5rem;
                         @include flex; 
                         flex-direction: column;
                         .data {
-                            background-color: $color-pink;
                             padding: 0;
                             p {
                                 font-family: $font-body;
@@ -72,7 +77,6 @@
                             };  
                         }
                         .image {
-                            background-color: $color-pink;
                             padding: 0; 
                             height: 2.5rem;
                             img {
@@ -84,13 +88,13 @@
                     }
                     &__description {
                         width: 100%; 
+                        margin-top: 0.5rem;
                         .certificado {
-                            background-color: $color-pink;
                             padding: 0; 
                             p {
                                 font-family: $font-body;
                                 font-size: 1.5rem;
-                                font-weight: bold; 
+                                font-weight: 500; 
                                 margin-bottom: 0;
                                 padding: 0;  
                                 gap: 0.5rem;
@@ -100,12 +104,12 @@
                         .instituto {
                             display: flex;
                             align-items: center;
-                            background-color: $color-pink;
                             padding: 0; 
                             height: 2.5rem;
                             p {
                                 font-family: $font-body;
                                 font-size: 1.3rem; 
+                                font-weight: 300;
                                 margin-top: 0rem;
                                 margin-bottom: 0;  
                             }
@@ -113,11 +117,20 @@
                     }        
                 }
             }
+            .table:hover {
+                border: 0.5rem solid $color-dark-secondary;
+            }
         }
     }
 }
 
 //RESPONSIVES ABOUT
+
+@media screen and (max-width: 1100px) {
+    .about__body {
+        padding: 0rem 12rem;
+    }
+}
 
 @media screen and (max-width: 950px) {
     .about__body {
@@ -125,52 +138,117 @@
     }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 800px) {
     .about__body {
-        gap: 2rem;
+        padding: 0rem 8rem;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .about__body {
-        &__text {
-            p {
-                font-size: 1.35rem;
-            };
-            button {
-                width: 11rem;
-                height: 3.5rem;
-                a {
-                    font-size: 1.3rem;
+        padding: 0rem 7rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about__body {
+        padding: 0rem 6rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .about__body {
+        padding: 0rem 5rem;
+        &__certifications {
+            .table {
+                width: 300px;
+                padding: 1.3rem 1.3rem 0.7rem;
+                &__row__description {
+                    .certificado, .instituto {
+                        p {
+                            font-size: 1.2rem;
+                        }
+                    }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about__body {
+        padding: 0rem 2rem;
+        &__text {
+            padding: 0rem 2rem;
+            p {
+                font-size: 1.6rem;
+            }
+            .corner-button {
+                font-size: 1.5rem;
             }
         }
         &__certifications {
             .table {
-                &__row {
-                    &__description {
-                        .certificado {
-                            p {
-                                font-size: 1.4rem;
-                            } 
-                        }
-                        .instituto {
-                            height: 2.5rem;
-                            p {
-                                font-size: 1.2rem;  
-                            }
-                        }
-                    }        
-                }
+                width: 280px;
+                padding: 0.8rem 0.8rem 0.5rem;
             }
         }
     }
 }
 
-@media screen and (max-width: 576px) {
-    .about__body {
-        &__text {
-            @include sizes(80%, auto);
-        }
-    }
-}
+// @media screen and (max-width: 860px) {
+//     .about__body {
+//         gap: 2rem;
+//     }
+// }
+
+// @media screen and (max-width: 768px) {
+//     .about__body {
+//         &__text {
+//             p {
+//                 font-size: 1.35rem;
+//             };
+//             button {
+//                 width: 11rem;
+//                 height: 3.5rem;
+//                 a {
+//                     font-size: 1.3rem;
+//                 }
+//             }
+//         }
+//         &__certifications {
+//             .table {
+//                 &__row {
+//                     &__description {
+//                         .certificado {
+//                             p {
+//                                 font-size: 1.4rem;
+//                             } 
+//                         }
+//                         .instituto {
+//                             height: 2.5rem;
+//                             p {
+//                                 font-size: 1.2rem;  
+//                             }
+//                         }
+//                     }        
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 576px) {
+//     .about__body {
+//         padding: 1rem 10rem;
+//         &__text {
+//             @include sizes(80%, auto);
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 500px) {
+//     .about__body {
+//         padding: 0rem;
+//     }
+// }

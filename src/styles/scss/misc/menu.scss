@@ -3,10 +3,10 @@
 .menu {
     width: 100%;
     position: fixed;
-    margin-left: 8rem;
+    margin-left: 2.5rem;
     z-index: 1;
     &__container {
-        // @include max-width;
+        @include max-width;
         font-size: 1.5rem;
         text-align: left;
         .menu-open {
@@ -20,6 +20,7 @@
             cursor: pointer;
         }
         .menu-open-button:hover {
+            background: $color-dark-secondary;
             transform: scale(1.2, 1.2) translate3d(0, 0, 0);
         } 
         a {
@@ -27,7 +28,7 @@
             text-decoration: none;
         }
         .menu-item, .menu-open-button {
-            background: $color-darkblue;
+            background: $color-dark-principal;
             border-radius: 100%;
             width: 6rem;
             height: 6rem;
@@ -66,8 +67,8 @@
             }
         }
         .menu-item:hover {
-            background: $color-red;
-            color: $color-darkblue;
+            background: $color-dark-secondary;
+            // color: $color-darkblue;
         }
         .menu-item:nth-child(3) {
             transition-duration: 180ms;
@@ -147,6 +148,9 @@
 }
 
 @media screen and (max-width: 500px) {
+    .menu {
+        margin-left: 2rem;
+    }
     .menu-open:checked ~ .menu-item:nth-child(3) {
         transform: translate3d(75px, 0, 0);
     }

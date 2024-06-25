@@ -13,6 +13,7 @@
     "watch-sass": "nodemon -e scss -x  \"npm run build-sass\""
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
@@ -20,7 +21,9 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "framer-motion": "11.2.10",
     "react": "^18.2.0",
+    "react-awesome-reveal": "^4.2.12",
     "react-dom": "^18.2.0",
+    "react-magic-motion": "^1.1.2",
     "sass": "^1.71.1"
   },
   "devDependencies": {

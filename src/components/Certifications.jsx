@@ -16,24 +16,24 @@ export const Certifications = () => {
 			id: 2,
 			año: 2023,
 			logo: "../img/institutos/todocode.png",
-			titulo: "TODOCODE",
-			instituto: "INTROD. A LA PROGRAMACIÓN ",
+			titulo: "INTROD. A LA PROGRAMACIÓN",
+			instituto: "TODOCODE",
 			certificado: "https://drive.google.com/file/d/1UFPNLm7JW-osHTznCQrp26V7Zaw0GrJI/view?usp=drive_link"
 		},
 		{
 			id: 3,
 			año: 2023,
 			logo: "../img/institutos/todocode.png",
-			titulo: "TODOCODE",
-			instituto: "GIT Y GITHUB",
+			titulo: "GIT Y GITHUB",
+			instituto: "TODOCODE",
 			certificado: "https://drive.google.com/file/d/1xpbu-QnJFy7thiiEciBk149WOFTa0eP_/view?usp=drive_link"
 		},
 		{
 			id: 4,
 			año: 2023,
 			logo: "../img/institutos/coderhouse.png",
-			titulo: "CODERHOUSE",
-			instituto: "DESARROLLO WEB",
+			titulo: "DESARROLLO WEB",
+			instituto: "CODERHOUSE",
 			certificado: "https://drive.google.com/file/d/1JmiJm6upGDd9PTFfuUDoqK_JP1Or92Z-/view?usp=drive_link"
 		},
 		{
@@ -48,8 +48,8 @@ export const Certifications = () => {
 			id: 6,
 			año: 2024,
 			logo: "../img/institutos/coderhouse.png",
-			titulo: "CODERHOUSE",
-			instituto: "REACT JS",
+			titulo: "REACT JS",
+			instituto: "CODERHOUSE",
 			certificado: "https://drive.google.com/file/d/1SFr21TE64-9xIDcPm1MbgNuYtL72Hcbx/view?usp=drive_link"
 		}
 	]);
