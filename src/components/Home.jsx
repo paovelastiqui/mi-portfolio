@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-export const Hero = () => {
+export const Home = () => {
 	return (
 		<div className="home" id="home">
 			<div className="home__container">
@@ -24,7 +24,7 @@ export const Hero = () => {
 							<span className="icon"><FontAwesomeIcon icon={faGithub} /></span> 
 						</button>
 					</a>
-					<a href="#home" target="_blank" rel="noopener noreferrer">
+					<a href="mailto:paovelastiqui@gmail.com" target="_blank" rel="noopener noreferrer">
 						<button className="corner-button">
 							<span className="icon-text"><FontAwesomeIcon icon={faEnvelope} />Email</span>
 							<span className="icon"><FontAwesomeIcon icon={faEnvelope} /></span>

@@ -28,14 +28,14 @@
             text-decoration: none;
         }
         .menu-item, .menu-open-button {
-            background: $color-dark-principal;
+            background: var(--color__principal);
             border-radius: 100%;
             width: 6rem;
             height: 6rem;
             margin-left: 0px;
             position: absolute;
             top: 20px;
-            color: $color-white;
+            color: var(--color__text__principal);
             font-size: 2.5rem;
             text-align: center;
             line-height: 80px;
@@ -47,7 +47,7 @@
             .hamburger {
                 width: 25px;
                 height: 3px;
-                background-color: $color-white;
+                background-color: #ffffff;
                 display: block;
                 position: absolute;
                 top: 50%;
@@ -67,8 +67,7 @@
             }
         }
         .menu-item:hover {
-            background: $color-dark-secondary;
-            // color: $color-darkblue;
+            background: var(--color__secondary);
         }
         .menu-item:nth-child(3) {
             transition-duration: 180ms;
@@ -179,3 +178,21 @@
         transform: translate3d(240px, 0, 0);
     }
 }
+
+//MODE MENU
+
+// @media (prefers-color-scheme: light) {
+//     .menu {
+//         &__container {
+//             .menu-open-button:hover {
+//                 background: $color-light-secondary;
+//             } 
+//             .menu-item, .menu-open-button {
+//                 background: $color-light-principal;
+//             }
+//             .menu-item:hover {
+//                 background: $color-light-secondary;
+//             }
+//         }
+//     }
+// }

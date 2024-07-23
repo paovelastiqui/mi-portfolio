@@ -1,60 +1,60 @@
 //MODAL
 
-.open {
-    .modal {
-        @include sizes(800px, 400px);
-        @include flex;
-        flex-direction: column;
-        border: 1px solid red;
-        background-color: darkgrey;
-        &__close {
-            display: flex;
-            justify-content: right;
-            align-items: center;
-        }
-        &__info {
-            @include flex;
-            &__video {
-                @include flex;
-            }
-            &__data {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                h2 {
-                    color: white;
-                }
-                h3 {
-                    color: white;
-                }
-                .code {
-                    @include flex;
-                    opacity: 0.5;
-                    position: relative;
-                    flex-wrap: nowrap;
-                    gap: 1rem;
-                    margin: 2rem 0 1rem;
-                    a {
-                        background-color: $color-darkblue;
-                        font-family: $font-body;
-                        font-size: 1.4rem;
-                        font-weight: bold;
-                        border-radius: 1.75rem;
-                        padding: 0.75rem 2rem;
-                        border: none;
-                        color: black;
-                        text-decoration: none;
-                        display: flex;
-                        gap: 0.5rem;
-                    }
-                    button:hover {
-                        background-color: black;
-                        a {
-                            color: $color-darkblue;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+// .open {
+//     .modal {
+//         @include sizes(800px, 400px);
+//         @include flex;
+//         flex-direction: column;
+//         border: 1px solid red;
+//         background-color: darkgrey;
+//         &__close {
+//             display: flex;
+//             justify-content: right;
+//             align-items: center;
+//         }
+//         &__info {
+//             @include flex;
+//             &__video {
+//                 @include flex;
+//             }
+//             &__data {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 h2 {
+//                     color: $color-white;
+//                 }
+//                 h3 {
+//                     color: $color-white;
+//                 }
+//                 .code {
+//                     @include flex;
+//                     opacity: 0.5;
+//                     position: relative;
+//                     flex-wrap: nowrap;
+//                     gap: 1rem;
+//                     margin: 2rem 0 1rem;
+//                     a {
+//                         background-color: $color-bg-dark;
+//                         font-family: $font-body;
+//                         font-size: 1.4rem;
+//                         font-weight: bold;
+//                         border-radius: 1.75rem;
+//                         padding: 0.75rem 2rem;
+//                         border: none;
+//                         color: $color-black;
+//                         text-decoration: none;
+//                         display: flex;
+//                         gap: 0.5rem;
+//                     }
+//                     button:hover {
+//                         background-color: $color-bg-dark;
+//                         a {
+//                             color: $color-dark-principal;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

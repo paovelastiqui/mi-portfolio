@@ -8,9 +8,6 @@
         @include max-width;
         width: 950px;
         grid-template-columns: 3fr 1fr;
-        // display: flex;
-        // justify-content: space-evenly;
-        // align-items: center;
         &__title {
             display: flex;
             flex-direction: column;
@@ -20,7 +17,7 @@
                 font-family: $font-principal;
                 font-weight: 900;
                 font-size: 7.5rem; 
-                color: $color-white;
+                color: var(--color__text__principal);
                 margin-bottom: -2rem;
             }
             .point {
@@ -31,15 +28,15 @@
                 font-weight: 300;
                 font-size: 4rem; 
                 margin-top: 3.5rem;
-                color: $color-dark-principal;
+                color: var(--color__principal);
             }
             .subtitle:hover {
-                color: $color-dark-secondary;
+                color: var(--color__secondary);
             }
         }
         &__button {
             border-radius: 1rem;
-            background-color: $color-bg-dark;
+            background-color: var(--color__bg);
             font-size: 10px;
             display: -webkit-box;
             display: flex;
@@ -171,16 +168,8 @@
         margin-left: 0rem;
         text-align: center;
         &__title {
-        //     p {
-        //         font-size: 5rem; 
-        //     }
-        //     .point {
-        //         font-size: 5rem; 
-        //     }
             .subtitle {
                 margin-left: -8rem;
-        //         font-size: 2.75rem; 
-        //         margin-top: 2rem;
             } 
         }
         &__button {
@@ -226,3 +215,26 @@
         }
     }
 }
+
+//MODE
+
+// @media (prefers-color-scheme: light) {
+//     .home {
+//         &__container {
+//             &__title {
+//                 p {
+//                     color: $color-black;
+//                 }
+//                 .subtitle {
+//                     color: $color-light-principal;
+//                 }
+//                 .subtitle:hover {
+//                     color: $color-light-secondary;
+//                 }
+//             }
+//             &__button {
+//                 background-color: $color-bg-light;
+//             }
+//         }
+//     }
+// }

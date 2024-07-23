@@ -1,12 +1,27 @@
+//FOOTER
+
 .footer {
     @include flex;
     @include sizes(100%, 10vh);
-    background-color: $color-black;
+    //background-color: var(--color__bg);
     &__container {
         @include flex;
         p {
-            color: $color-white;
+            color: var(--color__text__principal);
             font-size: 1.5rem;
         }
     }
 }
+
+//MODE
+
+// @media (prefers-color-scheme: light) {
+//     .footer {
+//         background-color: $color-bg-light;
+//         &__container {
+//             p {
+//                 color: $color-black;
+//             }
+//         }
+//     }
+// }

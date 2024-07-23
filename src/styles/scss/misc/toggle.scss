@@ -1,0 +1,48 @@
+//TOGGLE
+
+.toggle {
+  @include max-width;
+  display: flex;
+  justify-content: right;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.switch {
+  width: 40px;
+  height: 25px;
+  background-color: var(--color__bg2);
+  border: 1px solid var(--color__text__principal);
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  padding: 5px;
+  cursor: pointer;
+}
+  
+.switch[data-isOn="true"] {
+  justify-content: flex-end;
+}
+  
+.handle {
+  width: 12.5px;
+  height: 12.5px;
+  background-color: var(--color__principal);
+  border-radius: 40px;
+}
+
+.sun {
+  color: #ffffff;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.sun[data-isOn="true"] {
+  color: #dab664;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
